@@ -103,7 +103,7 @@ export default function AppointmentList() {
       setAppointments(
         appointments.filter((appointment) => appointment._id !== id)
       );
-      enqueueSnackbar("Appointment deleted", { variant: "success" });
+      enqueueSnackbar("Appointment visited", { variant: "success" });
     } catch (error) {
       enqueueSnackbar("Failed to delete appointment", { variant: "error" });
     }

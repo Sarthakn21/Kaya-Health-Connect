@@ -12,7 +12,7 @@ const appointmentSchema = new mongoose.Schema({
     patientAge: {
         type: Number,
         required: true,
-        min: 0 
+        min: 0
     },
     patientGender: {
         type: String,
@@ -24,7 +24,7 @@ const appointmentSchema = new mongoose.Schema({
         required: true
     },
 }, {
-    timestamps: true 
+    timestamps: true
 });
 
 const Appointment = mongoose.model('Appointment', appointmentSchema);
